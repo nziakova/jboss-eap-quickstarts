@@ -5,10 +5,6 @@
         <default-configs inherit="false"/>
         <packages inherit="false"/>
     </feature-pack>
-    <feature-pack location="org.wildfly:wildfly-galleon-pack:17.0.0.Final">
-        <default-configs inherit="false"/>
-        <packages inherit="false"/>
-    </feature-pack>
     <config model="standalone" name="standalone.xml">
         <layers>
             <include name="jaxrs"/>
