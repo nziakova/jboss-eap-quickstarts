@@ -14,7 +14,7 @@
             <include name="jaxrs"/>
             <include name="cdi"/>
             <include name="jpa"/>
-            <include name="h2-datasource"/>
+            <include name="h2-database"/>
         </layers>
     </config>
     <options>
