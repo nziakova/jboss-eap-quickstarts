@@ -1,14 +1,19 @@
 <?xml version="1.0" ?>
 
 <installation xmlns="urn:jboss:galleon:provisioning:3.0">
-    <feature-pack location="wildfly-s2i@maven(org.jboss.universe:s2i-universe):current">
+    <feature-pack location="eap-cd-s2i@maven(org.jboss.universe:s2i-universe):current">
+        <default-configs inherit="false"/>
+        <packages inherit="false"/>
+    </feature-pack>
+    <feature-pack location="org.wildfly:wildfly-galleon-pack:17.0.0.Final">
         <default-configs inherit="false"/>
         <packages inherit="false"/>
     </feature-pack>
     <config model="standalone" name="standalone.xml">
         <layers>
-            <include name="cloud-profile"/>
-            <include name="h2-database"/>
+            <include name="jaxrs"/>
+            <include name="cdi"/>
+            <include name="jpa"/>
         </layers>
     </config>
     <options>
