@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jboss.eap.xp.quickstarts</groupId>
+        <artifactId>quickstart-parent</artifactId>
+        <!--
+            Maintain separation between the artifact id and the version to help prevent
+            merge conflicts between commits changing the GA and those changing the V.
+            -->
+        <version>1.0.0.GA</version>
+    </parent>
+
+    <artifactId>microprofile-openapi-quickstart</artifactId>
+    <packaging>war</packaging>
+
+    <name>microprofile-openapi-quickstart</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.microprofile.openapi</groupId>
+            <artifactId>microprofile-openapi-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.ws.rs</groupId>
+            <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!-- Set the name of the archive -->
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
