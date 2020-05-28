@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
+<!--    <parent>
         <groupId>org.jboss.eap.xp.quickstarts</groupId>
         <artifactId>quickstart-parent</artifactId>
         <version>1.0.0.GA</version>
     </parent>
-
+-->
 
     <groupId>org.jboss.eap.xp.quickstarts</groupId>
     <artifactId>microprofile-openapi-quickstart</artifactId>
@@ -162,7 +162,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
-                        <version>${version.war.plugin}</version>
+                        <version>3.2.2</version>
                         <configuration>
                             <warName>ROOT</warName>
                         </configuration>
@@ -170,6 +170,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
+                        <version>3.0.1</version>
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
