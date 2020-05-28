@@ -16,10 +16,9 @@
 
     <name>microprofile-openapi-quickstart</name>
     
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <root.dir>${project.basedir}</root.dir>
         <jboss.home.name>EAP7_HOME</jboss.home.name>
         <product.name>JBoss EAP XP</product.name>
