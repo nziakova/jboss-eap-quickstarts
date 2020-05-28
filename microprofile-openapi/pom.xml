@@ -9,7 +9,9 @@
     </parent>
 -->
 
+    <groupId>org.jboss.eap.xp.quickstarts</groupId>
     <artifactId>microprofile-openapi-quickstart</artifactId>
+    <version>1.0.0.GA</version>
     <packaging>war</packaging>
 
     <name>microprofile-openapi-quickstart</name>
