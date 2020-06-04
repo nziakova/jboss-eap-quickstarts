@@ -80,6 +80,13 @@
         <dependencies>
             <dependency>
                 <groupId>org.jboss.bom</groupId>
+                <artifactId>eap-xp-runtime-artifacts</artifactId>
+                <version>${version.microprofile.bom}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.bom</groupId>
                 <artifactId>jboss-eap-xp-microprofile</artifactId>
                 <version>${version.microprofile.bom}</version>
                 <type>pom</type>
